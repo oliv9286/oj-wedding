@@ -225,7 +225,7 @@ h1, h2, h3, h4 {
 }
 
 .parallax {
-    height: 100vh; /* Ensure each section takes the full viewport height */
+    height: 100vh;
     position: relative;
     overflow: hidden;
     background-image: url('media/header.jpg');

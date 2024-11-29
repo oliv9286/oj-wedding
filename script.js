@@ -8,6 +8,20 @@ document.addEventListener('DOMContentLoaded', function() {
         menu.classList.toggle('active');
     });
 
+    function closeMenu(event) {
+        if (!menu.contains(event.target) && !menuToggle.contains(event.target)) {
+            menu.classList.remove('active');
+            menuIcon.innerText = menuIcon.innerText === 'menu' ? 'close' : 'menu';
+        }
+    }
+
+    document.addEventListener('click', closeMenu);
+
+    menuIcon.addEventListener('click', () => {
+        // Toggle between 'menu' and 'close' icons
+        menuIcon.innerText = menuIcon.innerText === 'menu' ? 'close' : 'menu';
+    });
+
     const anchors = document.querySelectorAll('a[href^="#"]');
 
     anchors.forEach(element => {
