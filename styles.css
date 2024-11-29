@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;700&display=swap');
+
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: none;
+}
+
+/* Body styles */
+body {
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #9ebcb0;
+}
+
+a:hover {
+    color: #62766e;
+}
+
+p {
+    margin: 10px 0;
+}
+
+/* Header styles */
+h1, h2, h3, h4 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+}
+.sticky-header {
+    font-family: "Raleway", sans-serif;
+    position: sticky;
+    top: 0;
+    background-color: #9ebcb0;
+    color: white;
+    padding: 10px 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.sticky-header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.sticky-header nav .menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.sticky-header nav .menu li {
+    margin: 0 15px;
+}
+
+.sticky-header nav .menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.sticky-header nav .menu li a:hover {
+    text-decoration: underline;
+}
+
+/* Burger Menu Styles */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+}
+
+.menu-toggle .bar {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* Section styles */
+.section {
+    padding: 5% 10%;
+}
+
+.section:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 14px;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sticky-header nav .menu {
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        width: 100%;
+        background-color: #9ebcb0;
+    }
+
+    .sticky-header nav .menu li {
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .sticky-header nav .menu-toggle {
+        display: flex;
+    }
+
+    .sticky-header nav .menu.active {
+        display: flex;
+    }
+
+    .section {
+        padding: 40px 10px;
+    }
+
+    .section h2 {
+        font-size: 24px;
+    }
+
+    .section p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sticky-header nav .menu li a {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .section h2 {
+        font-size: 20px;
+    }
+
+    .section p {
+        font-size: 14px;
+    }
+
+    .footer p {
+        font-size: 14px;
+    }
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Fully transparent */
+    }
+    100% {
+        opacity: 1; /* Fully visible */
+    }
+}
+
+.fade-in {
+    animation: fadeIn 2s ease-out; /* Apply the fade-in animation */
+}
+
+.parallax {
+    height: 100vh; /* Ensure each section takes the full viewport height */
+    position: relative;
+    overflow: hidden;
+    background-image: url('media/header.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    max-height: 500px;
+}
+
+.mea-culpa-regular {
+    font-weight: 600;
+    font-style: normal;
+    font-size: 48px;
+}
+
+.header-text {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 10%;
+    color: #fff;
+}
+
+.columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Automatically adjust columns based on the available width */
+    gap: 20px; /* Set the spacing between items to 20px */
+    padding: 20px; /* Add some padding around the container */
+}
+
+.g-map {
+    width: 100%;
+    min-height: 400px;
+}
