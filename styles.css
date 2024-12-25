@@ -5,7 +5,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    cursor: none;
 }
 
 /* Body styles */
@@ -76,7 +75,6 @@ h1, h2, h3, h4 {
 /* Burger Menu Styles */
 .menu-toggle {
     display: none;
-    cursor: pointer;
     flex-direction: column;
     justify-content: space-around;
     width: 30px;
