@@ -1,4 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
+    var splide = new Splide('.splide', {
+        type: 'loop',
+        autoplay: true,
+        interval: 3000
+      });
+    splide.mount();
+
     // Get the menu toggle button and the menu
     const menuToggle = document.getElementById('menu-toggle');
     const menu = document.getElementById('menu');

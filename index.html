@@ -8,6 +8,8 @@
     <link rel="icon" href="media/favicon/favicon.ico">
     <link rel="manifest" href="media/favicon/site.webmanifest">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" integrity="sha256-FZsW7H2V5X9TGinSjjwYJ419Xka27I8XPDmWryGlWtw=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
 </head>
 <body>
     <header class="sticky-header">
@@ -26,7 +28,7 @@
     </header>
     <div class="parallax">
         <div class="header-text fade-in">
-            <div>
+            <div class="header-text-container">
                 <h1 class="mea-culpa-regular">Olivia & Jay</h1>
                 <h2>June 28th, 2025</h2>
                 <h2>Deming, Washington</h2>
@@ -53,12 +55,11 @@
         <div class="location">
             <iframe class="g-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.585651103166!2d-122.14582208770629!3d48.84704170138521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5485ac9268a61629%3A0xf56de3f05c1336f7!2sMisty%20River%20Wedding!5e0!3m2!1sen!2sus!4v1732495386868!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <div>
-                <p>The celebration will take place at <strong>Misty River Ranch</strong>.</p>
+                <p>The celebration will take place at <strong>Misty River Ranch</strong>. There will be signs to guide you into the parking lot as you approach the address.</p>
                 <p><strong>Address:</strong> 5690 N Fork Road, Deming, WA 98244</p>
-                <p>
-                    It's about 1 hour 45 minutes drive from Seattle, and 1 hour 30 minutes from Vancouver without traffic.
-                </p>
+                <p>Prepare approxiamtely 2 hours of driving from Seattle, and 1.5 hours of driving from Vancouver.</p>
                 <p>Friends coming from Canada, please consider reserving extra travel time for border-crossing, and refer to the U.S. and Canada customs and border website for items prohibited from crossing the border.</p>
+                <p>Ample free parking onsite. However, due to the remote nature of the location, plan ahead for ways to return home if you will be drinking alcohol.</p>
                 <p><strong>Lodging:</strong> we recommend AirBnB in Deming, or hotels in Bellingham, WA which is 20-30 minutes away from the event location.</p>
             </div>
         </div>
@@ -67,13 +68,29 @@
     <section id="section3" class="section">
         <h2>Event Details</h2>
         <h3>Dress Code</h3>
-        <p>Cocktail Attire. Please avoid white and red as reserved colors for the bride and groom's family.</p>
+        <p><a href="http://theknot.com/content/cocktail-wedding-attire" target="_blank">Casual Cocktail Attire.</a></p>
+        <ul>
+            <li>To make things fun, <a href="https://colorhunt.co/palettes/pastel" target="_blank">pastel colors</a> are encouraged, but not mandatory.</li>
+            <li>Please avoid white (or colors too close to  white) and red as reserved colors for the bride and groom's family.</li>
+            <li>bring an extra layer for warmth, our venue is fully open-air, although heaters will be provided, it could get chilly after sunset</li>
+            <li>wear comfortable shoes, and avoid overly thin heels, the walking  surface is largely grass</li>
+        </ul>
         <h3>Gift Registry</h3>
         <p>Your presence means more to us than presents! We don't have a registry, and gifts are not expected. However, if you're inclined, a contribution in cash towards our honeymoon fund would be greatly appreciated.</p>
         <h3>Agenda</h3>
-        <p>A more detailed agenda will come soon. For now, please aniticipate a afternoon ceremony and a reception in the evening.</p>
+        <p>This event runs 2:30pm to 9:00pm, since location is rather remote, please plan ahead for return options if you  will be drinking alcohol. 
+        AirBnBs in Deming and Bellingham are recommended for lodging, the venue also allows you to stay overnight in your car. We want everyone to get home safe!
+        </p>
+        <ul>
+            <li>2:30pm - Doors open. Take a walk on the trails around the venue, say "hi" to horses, enjoy refreshments, and have a blast at DIY and games.</li>
+            <li>4:00pm - Ceremony Start. Be a witness to our beginning 🫶</li>
+            <li>4:45pm - Cocktail Hour. Photos with the couple.</li>
+            <li>5:45pm - Reception Dinner</li>
+            <li>6:45pm - Cake cutting. Join us for Karaoke night! Got a song you want to sing? Tell us <a href="https://forms.gle/Y5k7VhrGjAPpTgck8" target="_blank">here</a> to gurantee availability.</li>
+            <li>9:00pm - Wrap up and Sendoff</li>
+        </ul>
         <h3>RSVP</h3>
-        <p>Let us know if you'll be joining us using the form <a href="https://forms.gle/dS4rFNt1Hh9xcGbs7" target="_blank">here</a></p>
+        <p>Confirm your attendence using the form <a href="https://forms.gle/dS4rFNt1Hh9xcGbs7" target="_blank">here</a>. Even if you can't make it, responding to the form greatly helps us with planning.</p>
     </section>
 
     <section id="gallery-1">
@@ -101,6 +118,17 @@
         <h3>Other Questions?</h3>
         <p>Please don't hesitate to reach out to us for clarification.</p>
     </section>
+
+
+    <section class="splide" aria-labelledby="carousel-heading">
+        <div class="splide__track">
+              <ul class="splide__list">
+                  <li class="splide__slide"><img width="100%" src="media/slide1.jpg"/></li>
+                  <li class="splide__slide"><img width="100%" src="media/slide2.jpg"/></li>
+                  <li class="splide__slide"><img width="100%" src="media/slide3.jpg"/></li>
+              </ul>
+        </div>
+      </section>
 
     <section id="section4" class="section">
         <h2>Our Story</h2>
